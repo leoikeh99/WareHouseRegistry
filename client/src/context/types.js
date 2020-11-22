@@ -1,0 +1,13 @@
+export const AUTH_SUCCESS = "AUTH_SUCCESS";
+export const AUTH_FAIL = "AUTH_FAIL";
+export const CLEAR_ERROR = "CLEAR_ERROR";
+export const SET_BUTTON_LOADER = "SET_BUTTON_LOADER";
+export const LOAD_USER = "LOAD_USER";
+export const USER_FAIL = "USER_FAIL";
+export const SET_NAV = "SET_NAV";
+export const ADD_EMPLOYEE = "ADD_EMPLOYEE";
+export const GET_EMPLOYEES = "GET_EMPLOYEES";
+export const EDIT_EMPLOYEE = "EDIT_EMPLOYEE";
+export const DELETE_EMPLOYEE = "DELETE_EMPLOYEE";
+export const SET_LOADER = "SET_LOADER";
+export const CLEAR_STATUS = "CLEAR_STATUS";

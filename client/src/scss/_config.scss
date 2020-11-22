@@ -1,0 +1,32 @@
+$primary: #0e6ba8;
+$textColor: #505050;
+$headerColor: #000000;
+$background: #ffffff;
+$danger: #f38181;
+$background2: #e7f5ff;
+
+@-webkit-keyframes sk-circleBounceDelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes sk-circleBounceDelay {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

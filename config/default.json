@@ -1,0 +1,5 @@
+{
+    "mongoURI": "mongodb://localhost:27017/warehouseRegistry",
+    "jwtSecret": "mo255_33i"
+  }
+  

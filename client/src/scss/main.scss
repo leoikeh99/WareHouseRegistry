@@ -1,0 +1,223 @@
+@import "config";
+@import "spinner";
+
+body {
+  font-family: "Itim", cursive;
+  position: relative;
+  background: $background;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.mt-1 {
+  margin-top: 5px;
+}
+
+.mt-2 {
+  margin-top: 8px;
+}
+
+.mt-3 {
+  margin-top: 11px;
+}
+
+.mb-1 {
+  margin-bottom: 5px;
+}
+
+.mb-2 {
+  margin-bottom: 8px;
+}
+
+.mb-3 {
+  margin-bottom: 11px;
+}
+
+.color-danger {
+  color: $danger;
+}
+
+.color-primary {
+  color: $primary;
+}
+
+.color-text {
+  color: $textColor;
+}
+
+.auth {
+  padding-top: 20vh;
+  text-align: center;
+  p {
+    color: $textColor;
+    margin: 0;
+    span {
+      color: $primary;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  i,
+  h2 {
+    color: $primary;
+  }
+  h2 {
+    margin: 5px;
+    margin-bottom: 20px;
+  }
+}
+
+.authContainer {
+  max-width: 300px;
+  margin: auto;
+}
+
+.home {
+  .nav {
+    border-right: 1px solid darken($background, $amount: 8);
+    padding: 0.6rem;
+    width: 14.5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    box-sizing: border-box;
+    height: 100vh;
+    .sideNav {
+      color: $textColor;
+      width: 100%;
+
+      h1 {
+        text-align: center;
+        color: $textColor;
+        i {
+          color: $primary;
+        }
+      }
+
+      ul {
+        padding: 0;
+        width: 100%;
+        font-size: 1.2rem;
+        margin: 0;
+        li {
+          list-style: none;
+          padding: 20px;
+          padding-left: 35px;
+          margin-bottom: 3px;
+          cursor: pointer;
+          i {
+            margin-right: 10px;
+          }
+          &:hover {
+            background: darken($background, 5);
+          }
+        }
+      }
+    }
+    .logout {
+      color: $danger;
+    }
+    .active {
+      color: $primary;
+    }
+  }
+
+  .main {
+    margin-left: 15.7rem;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    z-index: 1;
+    opacity: 0.5;
+    display: none;
+    overflow: hidden;
+  }
+}
+
+.activity {
+  padding: 10px 5px;
+  .view {
+    padding: 8px 0px;
+  }
+
+  .container {
+    max-width: 950px;
+    margin: auto;
+  }
+
+  .grid-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(312px, 1fr));
+    grid-gap: 10px;
+  }
+
+  .employees {
+    .popUp {
+      position: absolute;
+      top: 25vh;
+      left: 0;
+      right: 0;
+      width: 330px;
+      margin-left: auto;
+      margin-right: auto;
+      background: $background;
+      z-index: 2;
+      border-radius: 5px;
+
+      .cover {
+        padding: 20px 20px;
+        position: relative;
+
+        i {
+          position: absolute;
+          top: 7px;
+          right: 7px;
+          color: $danger;
+          cursor: pointer;
+        }
+
+        h4 {
+          margin: 4px;
+          margin-bottom: 20px;
+          text-align: center;
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+.list {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $background2;
+  color: $textColor;
+  font-size: 1.2rem;
+  i {
+    padding: 0px 7px;
+    cursor: pointer;
+  }
+  &:hover {
+    background: darken($background2, 6);
+  }
+}
